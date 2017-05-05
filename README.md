@@ -1,1 +1,1 @@
-# ruby
+# ruby# 基本セットアップ```$ sudo apt-get install ruby$ sudo apt-get install bundler```# 使い方インストール先のpathを指定するようにします。```$ bundle exec rubocop --path vendor/bundler```

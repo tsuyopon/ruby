@@ -1,5 +1,5 @@
 # 概要
-rspecの単体テスト実行方法について
+rspecの単体テスト実行方法とsimplecovによるカバレッジ取得方法について
 
 rspecについては次にもまとめている
 - https://github.com/tsuyopon/memo/blob/master/RUBY/rspec.md 

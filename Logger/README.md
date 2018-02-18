@@ -63,6 +63,34 @@ logger.debug { "This is a " + potentially + " expensive operation" }
 logger.debug("This is a " + potentially + " expensive operation")
 ```
 
-# 参考URL
-- https://docs.ruby-lang.org/ja/latest/library/logger.html
+### 特殊変数
+- [PARAM] logdev:
+  - ログを書き込むファイル名か、 IO オブジェクト(STDOUT, STDERR など)を指定します。
+- [PARAM] shift_age:
+  - ログファイルを保持する数か、ログファイルを切り替える頻度を指定します。 頻度には daily, weekly, monthly を文字列で指定することができます。 省略すると、ログの保存先を切り替えません。
+- [PARAM] shift_size:
+  - shift_age を整数で指定した場合のみ有効です。 このサイズでログファイルを切り替えます。
+- [PARAM] level:
+  - ログに記録する時のログレベルを指定します。省略した場合は Logger::Severity::DEBUG です。
+- [PARAM] progname:
+  - ログに記録する時のプログラム名を指定します。省略した場合は nil です。
+- [PARAM] formatter:
+  - ログに記録する時のログのフォーマッタを指定します。 省略した場合は Logger::Formatter インスタンスです。
+- [PARAM] datetime_format:
+  - ログに記録する時の日時のフォーマットを指定します。 省略した場合は '%Y-%m-%d %H:%M:%S' です。
+- [PARAM] shift_period_suffix:
+  - daily、weekly、monthlyでログファイルの切り替 えを行う時のログファイルの名の末尾に追加する 文字列のフォーマットを指定します。 省略した場合は '%Y%m%d' です。
 
+- SeeAlso
+  - https://docs.ruby-lang.org/ja/latest/class/Logger.html
+
+### msg, severity, message, prognameの引数について
+固定文字列として上記引数が登場してくる場合がありますが、以下の意味があります。
+- msg: ログに出力するメッセージ。
+- severity: ログレベル。Logger クラスで定義されている定数を指定します。 この値がレシーバーに設定されているレベルよりも低い場合、 メッセージは記録されません。
+- message: ログに出力するメッセージを文字列か例外オブジェクトを指定します。 省略すると nil が用いられます。
+- progname: ログメッセージと一緒に記録するプログラム名を指定します。 省略すると nil が使用されますが、実際には内部で保持されている値が使用されます。
+
+
+# 参考URL
+- https://docs.ruby-lang.org/ja/latest/class/Logger.html

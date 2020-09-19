@@ -1,3 +1,7 @@
+=begin
+initializeは特別な名前のメソッドでnewした際に実行されます。
+=end
+
 class Creature
   # constructor
   def initialize(name)

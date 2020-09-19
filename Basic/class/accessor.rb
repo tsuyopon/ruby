@@ -1,3 +1,12 @@
+=begin
+rubyにはアクセサメソッドがあります。
+
+アクセサメソッドには次の3つが存在します。
+- attr_reader #rede（読む）
+- attr_writer #write（書く）
+- attr_accessor #access(読むと書くの両方)
+
+=end
 class Triangle
   attr_accessor :baseLength, :height
 

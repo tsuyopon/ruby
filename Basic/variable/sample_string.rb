@@ -45,6 +45,10 @@ p "abcde".index("z")   # index=nil
 p "Alice Bob Charlie".split(" ")   #=> ["Alice", "Bob", "Charlie" ]
 p "Alice,Bob,Charlie".split(",")   #=> ["Alice", "Bob", "Charlie" ]
 
+# 空文字列かどうかを判定する
+p "".empty?            # true
+p "a".empty?           # false
+
 # 指定した文字列を含んでいるか確認
 p "abcde".include?("bc")   #=> true
 p "abcde".include?("zy")   #=> false

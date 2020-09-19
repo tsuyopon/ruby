@@ -1,6 +1,8 @@
 # 概要
 rubyの基本文法について
 
+requireが不要な本体に組み込まれているライブラリは以下を参考のこと
+- https://docs.ruby-lang.org/ja/2.7.0/library/_builtin.html
 
 # 抑えておくべきこと
 

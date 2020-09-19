@@ -9,11 +9,15 @@ p test.empty?
 # 配列
 city = ["Tokyo", "London", "Paris"]
 p city[1]
+p city[-1]
 p city.include?("Tokyo")
 
 # ハッシュ
 infos = {"name" => "hoge_hash", "number" => 10}
 puts infos["name"] 
+p infos.size
+p infos.keys
+p infos.values
 
 # ハッシュin ハッシュ (連想配列)
 infos = { personal:

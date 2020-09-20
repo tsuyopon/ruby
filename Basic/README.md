@@ -13,12 +13,19 @@ puts    # 改行あり
 printf  # 改行なし
 ```
 
-
-### インスタンス変数とクラス変数
-
+### 変数の参照
 ```
-@variable:  インスタンス変数
-@@variable: クラス変数
+sample_variable = "sample"
+puts "値は#{sample_variable}です"
+```
+
+### 変数
+```
+foo   #=> ローカル変数
+@foo  #=> インスタンス変数(@)
+@@foo #=> クラス変数(@@)
+$foo  #=> グローバル変数($)
+FOO   #=> 定数(大文字から始まる)
 ```
 
 ### グローバル変数
@@ -44,17 +51,20 @@ EXAMPLE_CONSTANT
 =end
 ```
 
-
 ### %記法には様々な記法がある。
 ダブルクォート、バッククォート、シングルクォートなどを表す。
+```
+例:
+%w(Alice Bob Chrlie) # => ["Alice", "Bob", "Chrlie"]
+```
 
 ### クラスのnew
 newすると必ずinitializeメソッドが呼ばれる。(定義しないことも可能)
 
 ### クラスのsetter, getterを考慮した際のアクセスメソッドは次の3つがある
 ```
-attr_reader #rede（読む）
-attr_writer #write（書く）
+attr_reader   #rede（読む）
+attr_writer   #write（書く）
 attr_accessor #access(読むと書くの両方)
 ```
 

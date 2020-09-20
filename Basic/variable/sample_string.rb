@@ -7,6 +7,9 @@
 str1 = "string1"
 str2 = "string2"
 p str1+str2
+p "#{str1} def"
+
+p ["aaa", "bbb", "ccc"].join(",")
 
 # 文字列末尾追加
 str1 << str2
@@ -55,3 +58,7 @@ p "abcde".include?("zy")   #=> false
 
 # 文字列反転
 p "abcde".reverse      #=>"edcba"
+
+# 文字数の取得
+p "abcdef".length
+p "abcdef".size        # sizeとlengthは実は同じ

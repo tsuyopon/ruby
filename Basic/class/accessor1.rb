@@ -6,6 +6,8 @@ rubyにはアクセサメソッドがあります。
 - attr_writer #write（書く）
 - attr_accessor #access(読むと書くの両方)
 
+これは参照しかしていないですが、attr_accessorというオーバースコープな権限を許可している例です。
+詳細はaccessor2.rbも確認してください。
 =end
 class Triangle
   attr_accessor :baseLength, :height

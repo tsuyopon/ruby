@@ -37,3 +37,8 @@ p h1
 h1.delete(:Yellow)
 p h1
 
+# 値の存在確認 (key, include, memberはいずれもhas_keyのエイリアス)
+p h1.has_key?(:Red)
+p h1.key?(:Red)
+p h1.include?(:Red)
+p h1.member?(:Red)

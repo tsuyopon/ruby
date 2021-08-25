@@ -113,3 +113,6 @@ rubyの基本文法はまず以下のURLをチェックすると良い
 - https://qiita.com/oshou/items/b7873c67cf22b5e8b42f
 - https://qiita.com/Fendo181/items/eb2cb17f32d99aa01f59
 
+知って得する！５５のRubyのトリビアな記法 
+- https://melborne.github.io/2013/03/04/ruby-trivias-you-should-know-4/
+

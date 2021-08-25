@@ -1,8 +1,8 @@
 #!/usr/bin/ruby 
 
-=begin
-クラスの簡単なサンプル
-=end
+#
+# インスタンスメソッドとクラスメソッドを混合しているサンプル
+#
 
 
 # rubyのクラス名は大文字で開始しなければらなない
@@ -11,7 +11,6 @@ class User
   # インスタンス変数を直接変更して操作ができるようにするもの。
   # attr_accessorによって@nameを読み書きするためのメソッドが自動的に定義されます。
   attr_accessor :name
-
 
   # attr_readerによってインスタンス変数 @read_nameを読み取り専用としてメソッドが自動的に定義されます。
   attr_reader :read_name
